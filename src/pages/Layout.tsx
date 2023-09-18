@@ -19,6 +19,7 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import Container from "@mui/material/Container";
+import DataInfo from "../components/DataInfo";
 // import GroupImage from '.././assets/logo/Group.png';
 const GroupImage='https://i.pinimg.com/originals/7d/f2/6f/7df26fa959d20fa16bf8223205cd949b.gif'
 const drawerWidth = 240;
@@ -178,22 +179,31 @@ export default function MiniDrawer() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
 
-        <Container maxWidth="xl" sx={{display:"flex"}}>
-          <Box
+        <Container maxWidth="lg" sx={{display:"flex",alignItems:"center",justifyContent:'center',marginBottom:"10px"}}>
+      <Container maxWidth="lg" sx={{display:"flex"}}>
+      <Box
             sx={{ bgcolor: "#F7F9FA", height: "141px", width: "20%",display:"flex",justifyContent:"center",alignItem:"center" }}
           >
-<img src={GroupImage} style={{width:"130px"}} />
+            <img src={GroupImage} style={{width:"130px"}} />
 
           </Box>
           <Box
-            sx={{ bgcolor: "#E4E6E7", height: "141px", width: "70%" }}
+            sx={{ bgcolor: "#F7F9FA", height: "141px", width: "80%" }}
           >
-<h1>Welcome Back</h1>
-<h1>Pavitar Singh</h1>
-<h1>Welcome Back</h1>
+<p style={{width:"100%",fontWeight:"300",fontSize:"14px"}}>Welcome Back</p>
+<h1 style={{width:"100%",fontWeight:"500",fontSize:"16px"}}>Pavitar Singh</h1>
+<p style={{width:"100%",fontWeight:"300",fontSize:"12px"}}>Skip the big Promises and face the Challenges ahead, for the bigger picture <br/>is just ahead</p>
 
           </Box>
+
+      </Container>
+    </Container>
+    <Container maxWidth="xl" sx={{display:"flex"}}>
+        
+<DataInfo/>
+
         </Container>
+
       </Box>
     </Box>
   );
