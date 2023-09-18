@@ -94,17 +94,12 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" >
+      <AppBar position="fixed" sx={{backgroundColor:"white"}}>
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
+     
+          <Typography variant="h6" noWrap component="div" sx={{color:"black",cursor:"pointer"}} 
             onClick={()=>{setOpen(!open)}}
-            edge="start"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
+            >
            Leave.do
           </Typography>
         </Toolbar>
